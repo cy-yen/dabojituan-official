@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" name="toTop" content="true">
+    <title>大博集团</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/main.all.min.css">
+
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/uaredirect.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/unslider-min.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/platform.css">
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = { log: function() {} };
+    </script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+<div class="header" id="j-jeader">
+    <div class="inner">
+        <a href="index.html" class="logo"><img class="logo-img" src="./img/logo.gif" alt=""></a>
+        <ul id="menu">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="product.html">游戏产品</a></li>
+            <li><a href="./platform.html">平台优势</a></li>
+            <li><a href="index.html">合作伙伴</a></li>
+            <li><a href="formulate.html">包网制定</a></li>
+            <li data-menuanchor="anchor6"><a href="about.html#anchor6">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="fullpage">
+    <div class="section fp-auto-height">
+        <div class="mod-0 title_for title_ab" >
+
+            <p class="title">关于我们</p>
+            <p>(接待时间：7x24小时)</p>
+
+            <p>网址：www.dabojituan.com</p>
+
+            <p>邮箱：dbzhpt@gmail.com</p>
+
+        </div>
+    </div>
+    <div class="section fp-auto-height">
+
+        <div class="mod-15 flex-box">
+            <div class="flex1">
+                <p class="text1">联系我们</p>
+                <p class="text2">
+                    非常欢迎与您达成合作意向，也非常珍视每一位客户
+                    提交的咨询信息。为了让我们提供更好的服务，请尽
+                    可能详细填写相关信息，我们将尽快与您取得联系！
+                </p>
+
+                <p class="text2">WhatsApp：+63 9295888888</p>
+                <p class="text2">Telegram：  +63 9295888888</p>
+                <p class="text2"> skype： +63 9295888888</p>
+                <p class="text2"> Gmail ： dbzhpt@gmail.com</p>
+                <p class="text2"> 大博集团网址：www.dabojituan.com</p>
+
+
+            </div>
+            <div class="flex1 img">
+                <img src="./img/about_title.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="right_box1">
+            <img src="./img/right_box.png">
+        </div>
+        <div class="left_box left_box1">
+            <img src="./img/left_box.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="section  fp-auto-height">
+
+        <div class="mod-foot">
+            <div class="mod-foot-top"></div>
+            <div class="foot_list">
+                <div>
+                    <img src="./img/fot1.png" alt="">
+                    <span>Skype：+63 9295888888</span>
+                </div>
+                <div>
+                    <img src="./img/fot2.png" alt="">
+                    <span>Telegram：+63 9295888888</span>
+                </div>
+                <div>
+                    <img src="./img/fot3.png" alt="">
+                    <span>WhatsApp：+63 9295888888</span>
+                </div>
+                <div>
+                    <img src="./img/fot4.png" alt="">
+                    <span>Gmail：dbzhpt@gmail.com</span>
+                </div>
+
+            </div>
+
+
+
+            <div class="copy">
+                <span>© . 版权所有 大博集团</span>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script type="text/x-jquery-tmpl" id="contactTemplate">
+    <ul class="ul-contact">
+        <li>
+        <a href="skype:<%=skype%>?chat">
+        <i class="i-skype"></i>
+        <span>Skype：<%=skype%></span>
+    </a>
+    </li>
+    <li>
+    <a href="tencent://message/?uin=<%=qq%>&Site=<%=domain%>&Menu=yes">
+        <i class="i-qq"></i>
+        <span>QQ：<%=qq%></span>
+    </a>
+    </li>
+    <li>
+    <a href="http://t.me/<%=telegram%>" target="_blank">
+        <i class="i-tele"></i>
+        <span>Telegram：@<%=telegram%></span>
+    </a>
+    </li>
+    <li>
+    <a href="https://api.whatsapp.com/send?phone=<%=whatsapp%>" target="_blank">
+        <i class="i-email"></i>
+        <span>WhatsApp：+<%=whatsapp%></span>
+    </a>
+    </li>
+    </ul>
+</script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        menu: '#menu',
+        anchors: ['anchor6'],
+        sectionsColor: ['#888888', '#666666', '#444444', '#999999', 'red', 'blue'],
+        autoScrolling: false,
+        slidesNavigation:true,
+        lazyLoading: true,
+
+        onLeave: function(origin){
+            var loadedSection = this;
+
+            //使用 index
+            if(origin.index == 0){
+                $("#j-ul-pro li").addClass('active');
+            }
+            if(origin.index == 1){
+                $("#j-ul-items li").addClass('active');
+            }
+
+        }
+
+    });
+
+    $(function(){
+        //Unsilder
+        $('#j-slider-default').unslider({
+            animation: 'fade',
+            autoplay: true, //默认true 可删
+            arrows: false, //默认true 可删
+            nav: false,  //默认true 可删
+            delay: 3000 //默认3000 可删
+        });
+        $('#j-slider-test').unslider({
+            animation: 'fade',
+            autoplay: true, //默认true 可删
+            arrows: false, //默认true 可删
+            nav: true,  //默认true 可删
+            delay: 10000 //默认3000 可删
+        });
+
+
+
+
+    })
+
+</script>
+</body>
+</html>

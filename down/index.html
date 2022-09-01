@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css?v111">
+
+    <script src="./js/rem.js"></script>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+    <script src="js/utf.js"></script>
+
+    <script src="./js/bscroll.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!--添加-->
+    <style>
+        /*提示sa打开*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .set {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        .shadow img {
+            width: 100%;
+        }
+
+        .shadow img {
+            width: 70%;
+            position: absolute;
+            top: 6vw;
+            right: 6vw;
+        }
+
+        .shadow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            background: rgba(0, 0, 0, 1);
+            overflow: hidden;
+        }
+
+        .shadow img {
+            width: 70%;
+            position: absolute;
+            top: 6vw;
+            right: 6vw;
+        }
+
+        #hintText {
+            margin-top: 52px;
+            padding: 21px;
+            color: #fff;
+            font-size: 23px;
+            text-align: left;
+        }
+
+        #hintText1 {
+            color: #fff;
+            font-size: 23px;
+            text-align: left;
+            padding: 26px;
+        }
+
+        #desUrl {
+            color: #fdb933;
+            font-size: 24px;
+        }
+
+        #copyBtn {
+            margin-top: 0.5rem;
+            height: 60px;
+            background: url("./pub/copy_btn.png") center center no-repeat;
+            background-size: auto 100%;
+        }
+
+        #copyBtn2 {
+            height: 100px;
+            background: url("./pub/1.png") center center no-repeat;
+            background-size: auto 100%;
+        }
+
+
+       #shadow2 img {
+            width: 100%;
+        }
+    </style>
+    <!--结束-->
+</head>
+<body>
+<div class="wrap">
+    <div class="banner">
+        <img id="app_banner" src="">
+        <div class="container">
+            <div id="container"></div>
+            <p>扫码下载</p>
+        </div>
+
+    </div>
+    <header>
+        <div class="header_info">
+            <div class="info_pic">
+                <img id="app_logo" src="">
+            </div>
+            <div class="info_text">
+                <h2 id="app_name">加载中。。</h2>
+                <ul>
+                    <li>
+                        <img src="./img/2.png">
+                        <span id="download_count">87521</span>
+                    </li>
+                    <li>
+                        <img src="./img/3.png">
+                        <span>IOS/Android</span>
+                    </li>
+                    <li>
+                        <img src="./img/4.png">
+                        <span id="app_version">v1.10</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_remarks">
+            <div class="remarks_rating">
+                <h3>
+                    <span id="grade">5.0</span>
+                    <img src="./img/start.png">
+                </h3>
+                <p id="grade_person_count">加载中。。</p>
+            </div>
+            <div class="remarks_info">
+                <div class="remarks_info_item">
+                    <h3><span>#</span>1</h3>
+                    <p>娱乐</p>
+                </div>
+                <div class="remarks_info_item">
+                    <h3>18<span>+</span></h3>
+                    <p>年龄</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="app_information" class="introduce">
+        加载中。。
+    </div>
+    <div class="btn_group">
+        <div class="btn_item">
+            <button  id="download_btn" class="iosMask">
+                <a>免费下载安装,领取现金红包</a>
+                <img src="img/conner.png"/>
+            </button>
+
+        </div>
+
+        <div class="btm">
+            <div class="btn_item jsApp">
+                <button id="js_download_btn">极速版APP下载</button>
+            </div>
+            <div class="btn_item gw">
+                <button id="app_home">进入网页版官网</button>
+            </div>
+        </div>
+
+        <div class="btn_item">
+            <a id="online_service">在线客服</a>
+            <span class="look">查看安装引导</span>
+        </div>
+    </div>
+    <div class="swiper-container" id="swiperImg">
+        <!--<div class="swiper-wrapper">
+            <img src="./img/swiper_item_01.png" class="swiper-slide">
+            <img src="./img/swiper_item_01.png" class="swiper-slide">
+            <img src="./img/swiper_item_01.png" class="swiper-slide">
+            <img src="./img/swiper_item_01.png" class="swiper-slide">
+        </div>-->
+    </div>
+    <div class="install">
+        <div class="install_title">
+            <h4>安装教程</h4>
+            <span class="close" style="font-size: .5rem;">×</span>
+        </div>
+        <div id="iosafter" class="wrapper">
+            <div class="content">
+                <img style="width: 100%" src="./img/course_2.png" class="img_01">
+            </div>
+
+
+        </div>
+
+        <!--IOS12之前-->
+        <div id="iosbefore" class="wrapper" style="display:none">
+            <div class="content">
+                <img style="width: 100%" src="./img/course_2.png" class="img_01">
+            </div>
+
+            <!--  <ul class="content">
+                  <li>
+                      <img src="./img/2.png" class="img_01">
+                      <p>描述文件下载完后点击“关闭”</p>
+                  </li>
+              </ul>-->
+        </div>
+    </div>
+    <!--  <<div class="ios_mask" style="display:none">
+        <p class="cha">×</p>
+        <img id="license_step_img1" src="./img/mask.png" style="display: none">
+        <img id="license_step_img2" src="./img/mask2.png" style="display: none">
+        <button class="closeMask">2:证书已安装·下一步</button>
+    </div> -->
+</div>
+<!--start-->
+<div id="shadow" class="set shadow hide">
+    <img id="shadowImg" src="">
+</div>
+
+<div id="shadow2" class="set shadow hide" style="padding:10px;">
+    <div id="hintText">
+        1.浏览器无法直接下载，请复制以下网址在苹果浏览器safari中打开
+    </div>
+    <div id="desUrl"></div>
+    <div id="copyBtn"></div>
+    <div id="hintText1">2.打开safari浏览器，粘贴并前往后即可下载。</div>
+    <div id="copyBtn2"></div>
+</div>
+<script src="./pub/layer.js"></script>
+
+<script src="./js/swiper.min.js"></script>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/index.js"></script>
+
+<script>
+    var util = {
+        // 获取设备类型
+        getBrowser: function () {
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent;
+                    var app = navigator.appVersion;
+                    return {
+                        //移动终端浏览器版本信息
+                        trident: u.indexOf('Trident') > -1, //IE内核
+                        presto: u.indexOf('Presto') > -1, //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') === -1, //火狐内核
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                        iPad: u.indexOf('iPad') > -1, //是否iPad
+                        webApp: u.indexOf('Safari') === -1 //是否web应该程序，没有头部与底部
+                    };
+                }(),
+
+                language: (navigator.browserLanguage || navigator.language).toLowerCase()
+            };
+            return browser;
+        },
+        // 是否是微信浏览器（qq浏览器）
+        isWeiXin: function () {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) !== null || ua.match(/qqqq/i) !== null) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        // ios 下的UC、百度、搜狗弹出复制地址引导
+        isShowShadow: function () {
+            if (this.getDeviceInfo() === 'ios') {
+                var ua = window.navigator.userAgent;
+                //var isUc = ua.indexOf('UCWEB') !== -1 || ua.indexOf('UCBrowser') !== -1;
+                var isBaidu = ua.indexOf('baiduboxapp') !== -1;
+                //var isSougou = ua.indexOf('Sogou') !== -1;
+
+                return isUc || isBaidu || isSougou;
+            }
+        },
+        getDeviceInfo: function () {
+            var browser = this.getBrowser(); // 获取设备类型
+            var device = 'other';
+            if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+                device = "ios";
+            } else if (browser.versions.android) {
+                device = "android";
+            }
+            return device;
+        },
+        // 复制剪切板
+        copyText: function (text) {
+            var input = document.createElement('input');
+            document.body.appendChild(input);
+            input.setAttribute('value', text);
+            input.select();
+            var oldContentEditable = input.contentEditable;
+            var oldReadOnly = input.readOnly;
+            var range = document.createRange();
+            input.contentEditable = true;
+            input.readOnly = false;
+            range.selectNodeContents(input);
+            var s = window.getSelection();
+            s.removeAllRanges();
+            s.addRange(range);
+            input.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
+            input.contentEditable = oldContentEditable;
+            input.readOnly = oldReadOnly;
+            if (document.execCommand('copy')) {
+                document.execCommand('copy');
+                console.log('复制成功');
+            }
+            document.body.removeChild(input);
+        }
+    }
+    var copyBtn=document.querySelector('#copyBtn')
+    copyBtn.onclick=function(){
+        util.copyText(window.location.origin);
+        layer.open({
+            content: '复制成功',
+            btn: ['我知道了']
+        });
+    }
+
+    // 弹出引导层处理
+    function shadowCheck() {
+        var shadowType = 0;
+        // 微信蒙版
+        var shadowImg=document.querySelector('#shadowImg'),
+            shadow=document.querySelector('#shadow'),
+            shadow2=document.querySelector('#shadow2'),
+            desUrl=document.querySelector('#desUrl')
+        if (util.isWeiXin()) {
+            shadowType = 1;
+            if (util.getDeviceInfo() === 'ios') {
+                shadowImg.src="./pub/wx_share_ios.png"
+            } else {
+                shadowImg.src="./pub/wx_share_android.png"
+            }
+            shadow.classList.remove("hide")
+        } else if (util.isShowShadow()) {
+            shadowType = 2;
+            shadow2.classList.remove("hide")
+        }
+        desUrl.innerHTML=window.location.origin
+        return shadowType;
+    }
+    shadowCheck()
+
+</script>
+</body>
+</html>

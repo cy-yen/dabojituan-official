@@ -1,0 +1,362 @@
+/* 头部 */
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, span, em, a, img, ul, li, ol, form, button, input, textarea, dl, dt, dd, iframe {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #000000;
+}
+
+a {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    outline: 0 none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #CD2407;
+}
+
+h1, h2, h3, h4, h5, h6, em {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+em {
+    font-style: normal;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.top {
+    width: 980px;
+    margin: -10px auto;
+    position: relative;
+}
+
+.logo {
+
+    float: left;
+
+    width: 786px;
+
+    height: 80px;
+
+    margin-left: -10px;
+
+    margin-top: 20px;
+
+    background-image: url(logo.png);
+
+    background-repeat: no-repeat;
+
+}
+
+.text {
+    font-size: 14px;
+    color: #333;
+    margin: 43px 0px 0px 145px;
+}
+
+.tel {
+    width: 197px;
+    height: 44px;
+    background: url(tel.png) no-repeat;
+    position: absolute;
+    top: 50px;
+    right: -10px;
+}
+
+.sethome {
+    float: right;
+    font-size: 12px;
+    line-height: 26px;
+    color: #000;
+    background: url(home.png) no-repeat;
+    width: 140px;
+    height: 66px;
+}
+
+.sethome a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #953c00;
+}
+
+.wrap {
+    margin: 10px auto;
+    width: 980px;
+    overflow: hidden;
+}
+
+.center {
+    background: #fff;
+    overflow: hidden;
+}
+
+.big_tit {
+    background: url(wuxing.png) no-repeat;
+    width: 980px;
+    height: 50px;
+}
+
+.big_tit h2 {
+    font-size: 28px;
+    color: #fff900;
+    line-height: 36px;
+    padding-left: 40px;
+}
+
+.big_tit1 {
+    background: url(wuxing.png) no-repeat;
+    width: 980px;
+    height: 50px;
+}
+
+.big_tit1 h2 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 48px;
+    padding-left: 15px;
+}
+
+.nav_box {
+    width: 957px;
+    margin: 10px auto;
+    background: #0000;
+    border: 0px solid #0000;
+    overflow: hidden;
+}
+
+.nav_li {
+    float: left;
+    width: 142px;
+    height: 46px;
+    background: #fff;
+    float: left;
+    margin: 8px 5px 8px 8px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.nav_li img {
+    margin-right: 6px;
+}
+
+.nav_li:hover {
+    width: 142px;
+    height: 46px;
+    border: 2px solid #0871b9;
+    float: left;
+    margin: 8px 5px 8px 8px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 15px;
+    color: #F60;
+}
+.listbox-tip p
+{
+    line-height: 1.8;
+
+}
+.listbox-tip p b span {
+    font-size: 13pt;
+}
+
+.nav_li em {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.footer a {
+    margin: 0px 5px;
+    color: #000;
+}
+
+.clear {
+
+    clear: both;
+}
+
+ul.moremenu {
+
+    margin: 165px 0px 0px 5px;
+}
+
+ul.moremenu li {
+    list-style: none;
+}
+
+ul.moremenu li.kefu a {
+    display: block;
+    width: 122px;
+    height: 80px;
+}
+
+ul.moremenu li.help a {
+
+    display: block;
+    width: 122px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+ul.moremenu li.test a {
+
+    display: block;
+
+    width: 122px;
+
+    height: 40px;
+
+    margin-top: 8px;
+
+}
+
+ul.moremenu li.xiazai a:hover {
+
+    background-position: -104px -119px
+}
+
+.rightbar h5 {
+
+    width: 91px;
+
+    text-align: center;
+
+    line-height: 1.4em;
+
+    margin: 42px 0px 0px 7px;
+
+    font-size: 14px;
+
+    color: #d5c7bc;
+}
+
+.rightbar a.close {
+
+    display: block;
+
+    width: 122px;
+
+    height: 30px;
+
+    margin-top: 10px;
+
+    margin-right: 0px;
+
+    margin-bottom: 0px;
+
+    margin-left: 4px;
+
+}
+
+.rightbar a.close:hover {
+
+    background-position: -104px -237px;
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .nav_box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_li {
+        width: 3.55rem;
+        height: 1.15rem;
+        line-height: 1.15rem;
+        font-size: 0.375rem;
+        border-radius:0.2rem;
+        display: inline-block;
+    }
+    .nav_li:last-child
+    {
+        margin-right: 0;
+    }
+
+    .nav_li img {
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-right: 0.15rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .nav_li:last-child {
+        margin-right: 0;
+    }
+
+
+
+    .big_tit h2 {
+        font-size: 0.7rem;
+        padding-left: 1rem;
+    }
+    .listbox-tip p
+    {
+        line-height: 1.2;
+
+    }
+    .listbox-tip p b span {
+        font-size: 0.5rem;
+
+    }
+
+    .big_tit {
+        background: url(wuxing.png) no-repeat;
+        background-size: 0.7rem 0.7rem;
+        background-position: 0 28%;
+
+
+    }
+
+    .detail .detail-content {
+        padding: 0.75rem;
+    }
+   .layui-layer-content
+    {
+       width: 100%;!important;
+    }
+    .layui-layer img
+    {
+
+        max-width: 100%;
+        display: inline-block;
+    }
+    .Section0 .MsoNormal
+    {
+        color: red;!important;
+    }
+}
+
+
+
+
+
+
+
+
