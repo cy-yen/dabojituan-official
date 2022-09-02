@@ -57,6 +57,57 @@
         .banner {
           @apply bg-[length:100%_100%] bg-no-repeat bg-[#140a03] h-[130px] text-white text-[12px] flex-c-c flex-col;
         }
+
+        .gradient {
+          -webkit-animation: transparent-data-v-1a68b189 1s;
+          animation: transparent-data-v-1a68b189 1s;
+        }
+        @keyframes transparent-data-v-1a68b189 {
+          0% {
+            -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+          }
+          10% {
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+          }
+          20% {
+            -webkit-transform: rotate(-16deg);
+            transform: rotate(-16deg);
+          }
+          30% {
+            -webkit-transform: rotate(16deg);
+            transform: rotate(16deg);
+          }
+          40% {
+            -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+          }
+          50% {
+            -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+          }
+          60% {
+            -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+          }
+          70% {
+            -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+          }
+          80% {
+            -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+          }
+          90% {
+            -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+          }
+          100% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+        }
       }
     </style>
   </head>
@@ -75,25 +126,145 @@
       </header>
       <section class="grow overflow-y-auto" id="main">
         <section
-          class="banner bg-[url('./static/img/aboutbanner.fd0960a.png')]"
-        >
-          <p class="text-[.36rem] mb-[5px]">[ 关于我们 ]</p>
-          <p>
-            <span>网址：www.dabojituan.com</span>
-            <span class="ml-[5px]">邮箱：dbqpvip@gmail.com</span>
-          </p>
-          <p>接待时间：7x24 小时</p>
-        </section>
-        <section class="bg-[#f5f5f5] text-[.26rem] px-[.3rem]">
-          <h3 class="title-with-bar">联系我们</h3>
-          <p class="text-[#666666]">
-            非常欢迎与您达成合作意向，也非常珍视每一位客户提交的咨询信息。为了让我们提供更好的服务，请尽可能详细填写相关信息，我们将尽快与您取得联系！
-          </p>
-          <img
-            class="w-[300px] m-auto"
-            src="./static/img/about_title.67345e4.png"
-            alt=""
-          />
+          class="banner bg-[url(&#39;./static/img/productBanner.7f6a382.png&#39;)]"
+        ></section>
+        <section class="bg-[#f5f5f5] text-[.26rem] px-[.3rem] pb-[.3rem]">
+          <h3 class="title-with-bar">产品介绍</h3>
+          <ul class="flex flex-wrap justify-between">
+            <!--[-->
+            <li
+              class="bg-[url(&#39;./static/img/sports.6034caa.png&#39;)] w-[2.2rem] h-[2.8rem] mb-[.25rem] pt-[1.72rem] bg-cover flex flex-col items-center text-red gradient1"
+            >
+              <p class="text-[.32rem] font-bold">体育游戏</p>
+              <p class="text-[.20rem]">Sports games</p>
+            </li>
+            <li
+              class="bg-[url(&#39;./static/img/electron.f853397.png&#39;)] w-[2.2rem] h-[2.8rem] mb-[.25rem] pt-[1.72rem] bg-cover flex flex-col items-center text-red gradient1"
+            >
+              <p class="text-[.32rem] font-bold">电子游艺</p>
+              <p class="text-[.20rem]">Electronics games</p>
+            </li>
+            <li
+              class="bg-[url(&#39;./static/img/fishing.18e724d.png&#39;)] w-[2.2rem] h-[2.8rem] mb-[.25rem] pt-[1.72rem] bg-cover flex flex-col items-center text-red gradient1"
+            >
+              <p class="text-[.32rem] font-bold">捕鱼游戏</p>
+              <p class="text-[.20rem]">Fishing games</p>
+            </li>
+            <li
+              class="bg-[url(&#39;./static/img/immortal.3a68f5d.png&#39;)] w-[2.2rem] h-[2.8rem] mb-[.25rem] pt-[1.72rem] bg-cover flex flex-col items-center text-red gradient1"
+            >
+              <p class="text-[.32rem] font-bold">真人视讯</p>
+              <p class="text-[.20rem]">Live Video</p>
+            </li>
+            <li
+              class="bg-[url(&#39;./static/img/lottery.c89913c.png&#39;)] w-[2.2rem] h-[2.8rem] mb-[.25rem] pt-[1.72rem] bg-cover flex flex-col items-center text-red gradient1"
+            >
+              <p class="text-[.32rem] font-bold">彩票游戏</p>
+              <p class="text-[.20rem]">Lottery games</p>
+            </li>
+            <li
+              class="bg-[url(&#39;./static/img/board.235638b.png&#39;)] w-[2.2rem] h-[2.8rem] mb-[.25rem] pt-[1.72rem] bg-cover flex flex-col items-center text-red gradient1"
+            >
+              <p class="text-[.32rem] font-bold">棋牌游戏</p>
+              <p class="text-[.20rem]">Board games</p>
+            </li>
+            <!--]-->
+          </ul>
+          <ul class="flex flex-wrap justify-between">
+            <!--[-->
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/1.850d1b6.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/2.b240f07.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/3.03d804f.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/4.d0b71bd.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/5.acd958f.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/26.6ad3632.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/6.41f69b1.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/7.c5dcd91.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/8.abac4a6.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/9.70daa15.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/10.aad985e.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/11.fdef45a.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/12.81e93d6.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/13.b71205f.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/14.cf571a6.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/15.5217a8d.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/16.fe77dc4.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/17.a9bf386.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/18.17ed246.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/19.f68e2b6.jpg" alt="" />
+            </li>
+            <li class="mt-[.3rem] w-[2.2rem]">
+              <img src="./static/img/20.8ec89f5.jpg" alt="" />
+            </li>
+            <!--]-->
+          </ul>
+          <ul class="flex flex-wrap justify-between">
+            <!--[-->
+            <li class="mt-[.3rem]">
+              <img src="./static/img/productA1.329638b.png" alt="" />
+            </li>
+            <li class="mt-[.3rem]">
+              <img src="./static/img/productB.1c33516.png" alt="" />
+            </li>
+            <li class="mt-[.3rem]">
+              <img src="./static/img/productC.ee099d5.png" alt="" />
+            </li>
+            <li class="mt-[.3rem]">
+              <img src="./static/img/productD.fbae963.png" alt="" />
+            </li>
+            <li class="mt-[.3rem]">
+              <img src="./static/img/productE.eccb861.png" alt="" />
+            </li>
+            <li class="mt-[.3rem]">
+              <img src="./static/img/productF.356351e.png" alt="" />
+            </li>
+            <li class="mt-[.3rem]">
+              <img src="./static/img/productG.d70d2a8.png" alt="" />
+            </li>
+            <li class="mt-[.3rem]">
+              <img src="./static/img/productH.a4be5dd.png" alt="" />
+            </li>
+            <!--]-->
+          </ul>
         </section>
         <footer class="pt-[.4rem] text-[.26rem] flex-c-c flex-col text-white">
           <ul>
@@ -141,17 +312,12 @@
             </a>
           </li>
           <li class="w-1/5 h-[39px] flex justify-between flex-col items-center">
-            <a
-              href="product.html"
-              class="flex justify-between flex-col items-center h-[39px]"
-            >
-              <img
-                class="w-[.34rem] h-[.34rem]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABHNCSVQICAgIfAhkiAAAA3JJREFUWIXNl81P4kAYh38tqEgriXvCZN1mqTfktMY9Sris5f91bwgxAXUjmj0sNmK6LEL0AHKhJKIwe+gH03Y6BXTNzmVo+3b69OGdd6YCIYTgP2lxALi9vcXPqys8Pz9zgwkhEAQBDn9SkqAVi1hdXeXe9/DwgFq1CkVR8GVvLzROBICry8tIEAAeEAAYmSb+tFrce+7v71EulTAyTVxfX6Ner/NhJi8v3AEdALenzk8mEy7IcankxhBC0Pj1C/WLi3AYLgiCRgQHTBBC7+t2uyiXSiDTKSAI1jj2tUajgR/n54vBBIyE9AGQTgeVchnT6TT0Pl3XA0ChMI4R0EYcQ7YRAbO/zAXpdlGpVJhGYN/vHOu6jvOzMz7MvEb8Zu7a7Ugj/l7XddRqNQD21PaD0DniyRnblGuEMnfXbuPk5ARkOnXj6Tjmsd03b26wtrbmNeM8cBkzd53OQkb8vWEYMxiHFD4j8OeIz5DTcru7SCQSsxyiXiyQM9QsJABEUcTX/X0LZiEjjDgA2Eil8O3wEIlEwgMSNZ4gCDjI5/FJUSyYZYy4OUO1VCoFTdOQWF+PNkIIRFFEPp+HoigAQJl5RU83eWMDmqYhmUzyjYgiDigQF4ZlxKkPzLriGLLjmEDFIpKSNJcRD4wky0ub+bC5ycABJEnCoaZBsoFckFgMhUIhAAIAAiGEDIdD/DaMmSF4c4TVCABZlqGqKvO600ajEb4fHWE4HEIURRQKBXzc3mbGCu+xuTJNE2enp8hms0hvbYXGvQvMvC0OAOPxGIZhYPz0xAxy/zr3hPVLlmWoOzue2GazCdM0PXH0OOwHEGRU1YI5LpXQ7/WCawg1IKuyAlbyp9NpANaKXatW7TDGGgdv4aSPW62WNZv6vZ47ALN3OYLXH/t99wUHj4/8cTj9YDCw6wxj3wGGIX9dYdUZ1toTqPCUYWCWAm9agXkG57kuOmSuIcZ+hWmEMQnplSrKiGdS2HEBMwL+gZkoY7SZZY3498iLGHGeS+fm267arxwnkDMBI7564THk/27i7Iu4szUsZwL9HDu2NzXj2a0vYIT13RRlhJeb4WYW+EqgQV5thq6Ycxth5Axz1lAvFpWbHpiF3sR+QDwWc2Fi9u9lDMdXViyYbDbLryshXwmyJOFzJuPGZ1QVSUniGgnLzVwuh7/3gB+9JcmOcgAAAABJRU5ErkJggg=="
-                alt=""
-              />
-              <p class="text-[12px]">产品</p>
-            </a>
+            <img
+              class="w-[.34rem] h-[.34rem]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABHNCSVQICAgIfAhkiAAAA/BJREFUWIXNl09oHFUYwH9v0t2kbhpINqlFxLMg4qWgwVZRQQVB8NRTj548lvqPxFIoWipaWjWhVkrxIIIgWkOsSMU/hxzaauhKvYgleLJ260W6m8zM93l48+/NzuxmtqH4QQhvZ96b3/u9733zxqiq8j+JbQD8tAKfL0GnW6331CTMHYC7tve9TX79DX/hDN7sbmr795Xe5wHw2bnqIAA3/4GLP/cHaV3FP3oCbbcJvjqP//GnA2A2NqqDxOEHpZe0dRX/2Ek08FEFFcX/cpn1s5/0gbmdKEk5WW3hv/0eGgSggAqgqCrBF8t0T53dWpiy3JfVFsE7C6jvgyqqEpkRUEVU8Je+obt4ZutgTAGQrrYI311EwyAFTszYtlH7f2PpPJ2Fj7YGRkRckEurBMcXkdAuTWyix0z8uyjr577m1vEFIN7aQ4SKYLLty6sE759GwxCjIBkTjhlRDCCqQAS0/C2Mjw9nJn5APEMAuXwlSlabE6VmcM1YIGH9wvdDLlP0AIOdNID3/LOwYzwB1QFmNGMGz6Px0otDwKgWmjG7dlKbPwgTOyxI1oz0MeMZxt94mfre2eowFiQ1kw1zzy7qh1+DiYnUjETuisx4hvF5CwIVd1OaA+rsCgfo7hnGjryOmZxMTBSaMYbG/MEEpBpM9NDUjDo54wLtZOzNOczUZLEZz7Mge2adfhZmprkJFi00Y+67t/B+MzPN9rcO4c00XTMjHo3Dr1Lf80hvH1VVbrRh5VI/lMwuyZiZbuI9NtunH2j7Jv8emEP+uo4aQ+PQK9Qe3l08gTtxuJK/23Q+OM3oC8+x7aEHS++7IzCbDfs6uNWBlYvQ6TgXLaY6eZJdKqanGHn8UadPcOEHwus30j4oiNpEj+uPumOqKmNPPxnBnDgFa3/2kJp4+4pESahoKLa8R8lsppt4D9wPQPjLFbonP4ySPbRJHsYFLkQl3QQiIUhaHrrf/RjtpgIQ5+0a/yV1I91Ncm0t6RJeWyOuK9kKnewmzb6107aK4P/+R3mdSepIsjxRnYlfbtH1fNGL64qqJOcWcktkiEGy17UYJl9hVcrN5G06ZnTzZqCsAmcrbGSizEzPSW9YM0UwqvmZVzSj1c2UwpCfeaZdZKYnZ7SamWw4MCqC9sw8bQ8yY1OmihmXxksH0upmCgbctJn8EicwmbWuZEbzAw7ImezXQUHcthln3bWPGcl8NxWiRDDOWXWQGc2bSWm0n5nsc0rezQVm0m/iHjPJTLM5U91MWVgznsnNoLcC2xn1mjH1WjpaveaakQIzJWFGRy2MeeapYjM5E3kzI80mtcwRov7EXsy0PcLGX5x5M2XR2L+P/wC22CkBY2ATrAAAAABJRU5ErkJggg=="
+              alt=""
+            />
+            <p class="text-red text-[12px]">产品</p>
           </li>
           <li class="w-1/5 h-[39px] flex justify-between flex-col items-center">
             <a
@@ -193,12 +359,17 @@
             </a>
           </li>
           <li class="w-1/5 h-[39px] flex justify-between flex-col items-center">
-            <img
-              class="w-[.34rem] h-[.34rem]"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABHNCSVQICAgIfAhkiAAABRlJREFUWIXtmFtsFFUYx3+zs21pKQIaE1HKJUUQtIpiICLGa1BBEvCK10BivDwYH/TRFx+NPIkJJAaiBoMXCCAClnAVFFEQjQjeQCJysanFuqXd7pzzfT6c2bnsLlssifLgSZrTb+bMfL/5n/93zmk9VVXOk5b5rwGS7X+YM7XsWY/M52HzJ3DoCBw/ifzRgQ4dDC1X4k2ZRGZs8znDeGdl4O++hzeXQ64LAFVFjcEGBrUGaww18x8le9ft5wTTtzI/HoKFb6QuqQhiLSoWMRa1lvyipdRaS+3M6W7QZ19AZw6GD4PxYyHbd6rqI/J5WLIsDaKKWouKoFZQlSjuWbwUv2UC/ojhbjo/3e0eqh8As2fCzVOrpqtu4I3boPOvNIwxCWVK+t4CPctXuIHTpsQP9eTRdz5AliyDKq6oDrP/YBrE2kgZRBGxIIJYcb1YCpu2o4UCjBoBdbXuOVXEGMyWHQTvr+onzMm2GES1RAmD2nKFbD6PPXYCPA+GDgFAggBbKCAmoLB6PRQK/YAJgvh3EURCBUJlVCwqoYc09JAI2nU6fHsGMQYJAsQYbBAguS7sr8f6AXPR0EgVsbaiEmpDD5n4erZ5tONv7wgVMdhCgAQGExSwbW0V01WHCV/qqqWoRGkVhR4KgbMjm/Aa6qGtHensjBTRRJ8ZMqQfMLfe5JIXFUgqY0qrySnU8PD9TpWduxKKBJiggAQBWl9PdtyYfsCMaoK774gUiKvHgqarCFGy4y6nfsZ06MljN20vU8QGAQMenA2+3w8YwJs9A2/ydaFpS5WxkZf85tFc+PqreLU12FUfYdo7Eoo4hWqm3cDAx+aeMVffa7Tn4T8x133ttwfwi54R66oDj8ykiTQ8Ox9vUCMA/sQW/NatBN2nUWMQVRquvZr6h+aAVyVV1Y2y4xS6YRO6czfa24taW1EZrCAeZKdOpu6RB/CbLoNcF/LWu8ieffh1dYgxDmz4MLJPzSMzsukfwKzZAK1boAhQBlKprA2qUHfvLBqefBwyGWjdiq78MF5njEFEqH3+GbI3TukDRhXefg92fQmQ9oqNq6YYVwSygj9+LINfeRlvUCO6ci1mzfqyMh/w4nPU3jItSl1u4AQIqni4Rc+FEvaKp0SbnopG14u92X+QP194CQ0M3n2z8FomhHtaXATdCxa6raMizNrWGATQYqJwXyIRi0q4XymgDjQRiwjB/gPkFrwGgP/0PLSuNjXV0t3D6cVLK8AcOQrrNqZV0mKipAIaKZa6r7EySKxo9+p1BAd/wLtgEP6dt4VeC9cpseS37cAePVYCs2JNCUeoSDGRiEssiipu0wxjByKRgko6zi1aAkDNnHsQj9hjVpDA0LN5ewLmZBv8/EsKJvJKMVEYO0XE3ZcKXioqllCq9/M92BO/4zU0UHO9W0BV3VqFCIW9+xIwX31DaVMJv6yYKIydV+Ipc9dJeUUjRTWa7vy2HQD4k65xioTKqCq2rT0B89PhMphoqlIKJKso4aUwLnql9D5AYe/XDmZMc/xhxaLI5RIwvx0vpYg9k/KGU6ayVxQl9FJUVXEzh484mEsvcQuoMfHSEA51e1PxZJZUJDHnmpDbAyTpFY29oqGXpMKibjtOAeA1DuTinR+X3Y+VKQPROFHCO5qqKomVibxCiaKJ9/ZWPvcmm1PmqisgHOyFc+mF64GnClbwk2dgsXjhCS8Tnn2LZ2RN/KS+unFgnzBn9+ftv9TOq/9CnFcwfwPvQybdgB51HAAAAABJRU5ErkJggg=="
-              alt=""
-            />
-            <p class="text-red text-[12px]">关于</p>
+            <a
+              href="about.html"
+              class="flex justify-between flex-col items-center h-[39px]"
+            >
+              <img
+                class="w-[.34rem] h-[.34rem]"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABHNCSVQICAgIfAhkiAAAA/1JREFUWIXtmMtTGlkUh7/LK5piIgSp0qAlTnSwRnzgQlOxnKxc+Hf4X04WmUWiYPkgKlpYCpqHVJBoBAGhm+5ZSLcNNC8zNeNizuZX3j733u+ePvecRqGqqsojMct/DWC0/2Gama1TR0mSOIrHSafTXF9fk8/ncTqd+Hw+Rvx+vF7vT8OIThI4lUoRWV+nWCwCoE1RVRVt8vz8PL8FAj8F0zYy6XSav969qwEw03A4jAoEqkDJRIJisYjL5WJgcBCLpX1GtISRJIn1Dx9AVREtQDTdiEQYGBigr6+Pi4sLEicnAFhtNmZDIcbHx1vCtMQ9PDwkXyigAkr1lbQCUhSFvd1dAH59+VIfk8plNsJh1tfWHg6T+vq1o4gYNZlMUqlU8Hg8WK1WfVwFjo+PiUajD4O5zmZRugABkGWZXC6HEILep09RFOUORlFAVTmIxahUKt3DSJLUFYim5XIZAFFdRxtXVBVJkrj+8aN7GKfT2RWIlltutxuAfKGg55oxwjf5fPcwWiHrFAhVxe1yYbfbyeVylEolU+De3t7uYQITE20BjCdXgclgELhLVu02GdVht+PxeLqH8Xg8TE1NtQQS1YgIoL+/n7GxMb11mPkHp6aaFsC2ZXE2FMLv9zeNhKbu589ZWVnBarUSjUYpFosNfiN+P9PT00336qhRLrx6hSzLpFKpmpMqioLVZmPI52N+YQGHwwHA8NAQR/E4JcOt8nq9TAQCCCFM94A2jbKQz7O/v08ikdBrQ7NXJoRgxO9nZmaGvr4+SqUSG+EwZ2dnWCwW3c/ldvN6cVG/cR3B7H78yEEsdncDWiWxELU5JAS/T04yNzeHxWLhIBZjZ3u7Zh5CsLS0xIjf3xpGVVU2IhFOTk46awWGeUb1er0sLy/jePKE6M4Oe3t7DX5/vHnD6OiovndDAm9EIiTMQIS427hemwCmLy748+1bFEVhNhTC5/M1+H14/55sNmsOs7e7q7f9bluAmabTadaqnfr14iJ2u73muSzLbG5uNsJcfv/OvhbKJhHQ6omuoN+OGjX4HcXjZDIZenp6CExMNACfnZ7q0dFhtre22p603fdMM92qnj4YDOrQxvqTTCbvYbLZLJlMxvRkumr1wRixVklt8Pv85Qs3Nzc4HA6Ghof1yq35n5+f38N8/vTpH8kRHcRk/PT0FOAukant4oVC4R4m/e3b/cQub01DztRHtKpa9e73eBrWub29vYe5urp6cCQ6/RK8vLwE4Jdnz0yfQ7U3lctlRDUHtHfZoNrzeq1fWMulOtVO73A4WF1dxcws2iLdlPyHqPYJ28psAIMvXiDLsr4xbZKTur/NQl7vp3X0VtbRz9t/yx7VfyEeFczfzcb4opISq9oAAAAASUVORK5CYII="
+                alt=""
+              />
+              <p class="text-[12px]">关于</p>
+            </a>
           </li>
         </ul>
       </nav>
