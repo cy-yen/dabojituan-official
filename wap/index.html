@@ -581,10 +581,6 @@
           el: ".swiper-pagination",
         },
         on: {
-          init: function () {
-            console.log(this.autoplay);
-            if (!this.autoplay.running) this.autoplay.run();
-          },
           slideChange: function () {
             const element = document.querySelector(
               ".swiper-slide.swiper-slide-active div div"
