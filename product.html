@@ -2,7 +2,11 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8" name="toTop" content="true" />
-    <title>大博集团</title>
+    <meta
+      name="description"
+      content="全方位包网服务，为您搭建线上游戏平台与娱乐城。大博原生棋牌，风靡全球华人市场。并提供体育、真人、电子、彩票等上万款三方游戏。高速国际机房与专线，助你拓展全球商业版图。"
+    />
+    <title>大博集团-全方位包网│原生棋牌领导品牌</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png" />
@@ -59,7 +63,7 @@
       </div>
     </div>
 
-    <div id="fullpage">
+    <div id="fullpage" class="pp">
       <div class="section fp-auto-height">
         <div class="product_ber">
           <!-- <p class="title_y">17大平台优势</p> -->
@@ -138,65 +142,7 @@
         </div>
       </div>
     </div>
-
-    <script type="text/x-jquery-tmpl" id="contactTemplate">
-      <ul class="ul-contact">
-          <li>
-          <a href="skype:<%=skype%>?chat">
-          <i class="i-skype"></i>
-          <span>Skype：<%=skype%></span>
-      </a>
-      </li>
-      <li>
-      <a href="tencent://message/?uin=<%=qq%>&Site=<%=domain%>&Menu=yes">
-          <i class="i-qq"></i>
-          <span>QQ：<%=qq%></span>
-      </a>
-      </li>
-      <li>
-      <a href="http://t.me/<%=telegram%>" target="_blank">
-          <i class="i-tele"></i>
-          <span>Telegram：@<%=telegram%></span>
-      </a>
-      </li>
-      <li>
-      <a href="https://api.whatsapp.com/send?phone=<%=whatsapp%>" target="_blank">
-          <i class="i-email"></i>
-          <span>WhatsApp：+<%=whatsapp%></span>
-      </a>
-      </li>
-      </ul>
-    </script>
     <script type="text/javascript">
-      var myFullpage = new fullpage("#fullpage", {
-        verticalCentered: true,
-        menu: "#menu",
-        anchors: ["anchor2"],
-        sectionsColor: [
-          "#888888",
-          "#666666",
-          "#444444",
-          "#999999",
-          "red",
-          "blue",
-        ],
-        autoScrolling: false,
-        slidesNavigation: true,
-        lazyLoading: true,
-
-        onLeave: function (origin) {
-          var loadedSection = this;
-
-          //使用 index
-          if (origin.index == 0) {
-            $("#j-ul-pro li").addClass("active");
-          }
-          if (origin.index == 1) {
-            $("#j-ul-items li").addClass("active");
-          }
-        },
-      });
-
       $(function () {
         //Unsilder
         $("#j-slider-default").unslider({

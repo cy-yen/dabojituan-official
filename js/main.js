@@ -66,19 +66,19 @@ $(function () {
   }
   domain = domain.substring(0, domain.indexOf("/"));
 
-  var contact = $$Contact.getContact(domain);
-  var modalContactString = "";
-  if (contact) {
-    var template =
-      '<ul class="ul-item">\
-      <li><a href="skype:<%=skype%>?chat"><i class="icon-skype"></i><span>Skype：<%=skype%></span></a></li>\
-      <li><a href="http://t.me/<%=telegram%>" target="_blank"><i class="icon-tele"></i><span>Telegram：@<%=telegram%></span></a></li>\
-      <li><a href="https://api.whatsapp.com/send?phone=<%=whatsapp%>" target="_blank"><i class="icon-wa"></i><span>Whatsapp：+<%=whatsapp%></span></a></li>\
-      <li><a href="tencent://message/?uin=<%=qq%>&Site=<%=domain%>&Menu=yes"><i class="icon-qq"></i><span>QQ：<%=qq%></span></a></li>\
-      </ul>';
-    modalContactString = _.template(template, contact);
-    $("#contactInfo").append(_.template($("#contactTemplate").text(), contact));
-  }
+  // var contact = $$Contact.getContact(domain);
+  // var modalContactString = "";
+  // if (contact) {
+  //   var template =
+  //     '<ul class="ul-item">\
+  //     <li><a href="skype:<%=skype%>?chat"><i class="icon-skype"></i><span>Skype：<%=skype%></span></a></li>\
+  //     <li><a href="http://t.me/<%=telegram%>" target="_blank"><i class="icon-tele"></i><span>Telegram：@<%=telegram%></span></a></li>\
+  //     <li><a href="https://api.whatsapp.com/send?phone=<%=whatsapp%>" target="_blank"><i class="icon-wa"></i><span>Whatsapp：+<%=whatsapp%></span></a></li>\
+  //     <li><a href="tencent://message/?uin=<%=qq%>&Site=<%=domain%>&Menu=yes"><i class="icon-qq"></i><span>QQ：<%=qq%></span></a></li>\
+  //     </ul>';
+  //   modalContactString = _.template(template, contact);
+  //   $("#contactInfo").append(_.template($("#contactTemplate").text(), contact));
+  // }
   $("#btnModal").on("click", function () {
     layer.open({
       type: 1,
